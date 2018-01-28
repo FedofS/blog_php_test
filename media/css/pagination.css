@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
+
+
+/* Вариант пагинации для светлого фона 
+ * с использованием фоновой картинки в оформлении кнопок
+*/
+.pagination {
+	width:100%;
+	text-align:center;
+    padding: 10px;
+    margin:10px auto;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+.pagination .ul{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.pagination .ul li{
+	display:inline-block;
+	list-style:none;
+	margin:5px 5px;
+	font-size:14px;
+    text-align:center;
+}
+.pagination .ul li a, .pagination .ul li a:visited{
+	display:block;
+	text-decoration:none;
+	color: #555555;
+    background: url(bgnav.png) repeat-x scroll 0 0 #efefef;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    -moz-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    -ms-box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    box-shadow: 0 0 0 1px #fff, 1px 1px 3px #ddd;
+    height: 28px;
+	width: 28px;
+    line-height: 26px;
+    top: -1px;
+    text-shadow: 1px 1px #fff;
+}
+.pagination .ul li a:hover{
+	display:block;
+    background: url(bgnav.png) repeat-x scroll 0 -24px #efefef;
+	text-decoration:none;
+}
+.pagination .ul li a:active {
+box-shadow: none;
+    position: relative;
+    top: 1px;
+}
+
+/* Вариант пагинации для тёмного фона 
+ * с использованием градинтов css в оформлении
+*/
+.dark-pagination{
+ 
+	width:100%;
+	text-align:center;
+    padding: 10px;
+    margin:10px auto;
+    font-size: 15px;
+}
+  
+.dark-pagination .ul{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+.dark-pagination .ul li{
+	display:inline-block;
+	list-style:none;
+	margin:2px 2px;
+	font-size:14px;
+    text-align:center;
+}
+
+.dark-pagination .ul li a, .dark-pagination .ul li a:visited{
+	display:block;
+	text-decoration:none;
+    text-align: center;
+    color: #626262;
+    background: #47494f;
+    background-image: -moz-linear-gradient(top, #c6c6c6, #d4d4d4);
+    background-image: -webkit-linear-gradient(top, #c6c6c6, #d4d4d4);
+    background-image: -o-linear-gradient(top, #c6c6c6, #d4d4d4);
+	background-image: -ms-linear-gradient(top, #c6c6c6 0%,#d4d4d4 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#c6c6c6', EndColorStr='#d4d4d4', GradientType=0); /* IE6-9 */
+    border: 1px solid #9c9c9c;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    border-radius: 5%;
+    height: 22px;
+	width: 38px;
+    line-height: 26px;    
+    text-shadow: none;
+	top: -1px;
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.dark-pagination .ul li a:hover{
+  display:block;
+  background-image: -webkit-linear-gradient(top, #424242, #6d6d6d);
+  background-image: -moz-linear-gradient(top, #424242, #6d6d6d);
+  background-image: -o-linear-gradient(top, #424242, #6d6d6d);
+  background-image: linear-gradient(to bottom, #424242, #6d6d6d);
+  background: -ms-linear-gradient(top, #424242 0%,#6d6d6d 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#424242', EndColorStr='#6d6d6d', GradientType=0); /* IE6-9 */    
+  text-decoration:none;
+}
+.dark-pagination .ul li a:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+}
